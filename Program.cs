@@ -11,13 +11,13 @@
  */
 
 
-static string[] CountStringAndCreateNewArr(string[] str)
+static string[] CountStringAndCreateNewArr(string[] arr)
 {
     // Считаем количество строк, удовлетворяющих условию длины
     int count = 0;
-    for (int i = 0; i < str.Length; i++)
+    for (int i = 0; i < arr.Length; i++)
     {
-        if (str[i].Trim().Length <= 3)
+        if (arr[i].Trim().Length <= 3)
         {
             count++;
         }
@@ -28,11 +28,11 @@ static string[] CountStringAndCreateNewArr(string[] str)
     
     // Заполняем новый массив подходящими строками
     int index = 0;
-    for (int i = 0; i < str.Length; i++)
+    for (int i = 0; i < arr.Length; i++)
     {
-        if (str[i].Trim().Length <= 3)
+        if (arr[i].Trim().Length <= 3)
         {
-            resultStrings[index] = str[i].Trim();
+            resultStrings[index] = arr[i].Trim();
             index++;
         }
     }
